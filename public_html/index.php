@@ -9,6 +9,7 @@ require('vue/header.php');
 <div data-role="page">
     <div data-role="header">
         <h1>Listes des praticiens</h1>
+        <a href="http://localhost/E4Mobile/public_html/" data-theme="c" data-icon="home" data-ajax='false'>Home</a>
     </div>
     <div data-role="content">
     <?php 

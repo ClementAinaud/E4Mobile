@@ -7,8 +7,7 @@ class Passerelle{
 	}
         
 	static function addPraticien($num,$nom,$prenom,$adresse,$cp,$ville,$coef,$typeCode){
-         
-            $sql = "insert praticien(PRA_NUM,PRA_NOM,PRA_PRENOM,PRA_ADRESSE,PRA_CP,PRA_VILLE, PRA_COEFNOTORIETE, TYP_CODE) values (NULL,'$num','$nom','$prenom','$adresse','$cp','$ville','$coef','$typeCode')";
+            $sql = "insert praticien(PRA_NUM, PRA_NOM, PRA_PRENOM, PRA_ADRESSE, PRA_CP, PRA_VILLE ,PRA_COEFNOTORIETE,TYP_CODE) values (NULL,'$num','$nom','$prenom','$adresse','$cp','$ville','$coef','$typeCode')";
             $result = Passerelle::$mysql_link->exec($sql);           
             if ($result == 1){
                     return "SUCCESS";
